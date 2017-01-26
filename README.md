@@ -6,7 +6,7 @@ The following tools will help you prepare and run your data science cohort.
 Document| Description
 --- | ---
 dirs2repos | Script for creating multiple repos out of files in a single folder
-git-org-clone | Automatically downloads all available repositories for DSI
+git-org-clone | Automatically downloads all available DSI materials from HQ orgs
 Item | Plotting Tool
 Item | Plotting Tool
 Item | Plotting Tool
