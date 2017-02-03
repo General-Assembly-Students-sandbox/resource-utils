@@ -1,12 +1,12 @@
-#![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Tools
+#![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Repository Tools
 
-The following tools will help you prepare and run your data science cohort.
+The following tools will help you prepare and run your cohort.
 
 
 Document| Description
 --- | ---
 dirs2repos | Script for creating multiple repos out of files in a single folder
-git-org-clone | Automatically downloads all available DSI materials from HQ orgs
+git-org-clone | Automatically downloads all available repositories from within an organization
 Item | Plotting Tool
 Item | Plotting Tool
 Item | Plotting Tool
@@ -17,9 +17,9 @@ Item | Plotting Tool
 
 The structure of this repository provides a way for us to organize our information and resources.
 
-We encourage the teaching team for each cohort to fork this repository directly, and use it to create resources for your own instance. Please make sure to submit new materials back to the master so we can share them with students and instructors world-wide!
+We encourage the teaching team to fork this repository directly. Please make sure to submit new changes back to the master so we can share them with other students and instructors world-wide!
 
-If you have any questions about the organization of resources, or about the scope of our curriculum, feel free to jump into the `#dsi-instructors` channel on Slack and let us know!
+If you have any questions about these resources, feel free to jump into the `#github-enterprise` channel on Slack and let us know!
 
 
 ## Licensing
