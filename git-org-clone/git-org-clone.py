@@ -16,15 +16,34 @@ ORGS = ['dsi-projects',
         'dsi-standard-curriculum',
         'dsi-playground',
         'dsi-resources']
-OVERWRITE = True
 
 
 if __name__ == "__main__":
 
-    curdir = os.getcwd()
+    parser = ArgumentParser(description='Clone or pull repos from GA github enterprise in batch.')
+    parser.add_argument('-d','--destination',
+                        default=os.getcwd(), type=str, nargs=1,
+                        help='Destination directory for repos (defaults to current).')
+    parser.add_argument('-u','--username', default=None,
+                        type=str, nargs=1,
+                        help='Username for GA github enterprise. If not provided you must hardcorde this in the script.')
+    parser.add_argument('-p','--password', default=None,
+                        type=str, nargs=1,
+                        help='Username for GA github enterprise. If not provided you must hardcorde this in the script.')
+    parser.add_argument('-f','--overwrite','--force', default=False,
+                        action='store_true',
+                        help='If cloning, the folder will be deleted and re-cloned.')
+
+    args = parser.parse_args()
+    if args.username is not None:
+        USERNAME = args.username[0]
+    if args.password is not None:
+        PASSWORD = args.password[0]
+    OVERWRITE = args.overwrite
+    DESTINATION = args.destination
 
     for org in ORGS:
-        org_dir = os.path.join(curdir, org)
+        org_dir = os.path.join(DESTINATION, org)
         if os.path.exists(org_dir):
             if not OVERWRITE:
                 print "directory", org, 'exists.'
@@ -50,4 +69,4 @@ if __name__ == "__main__":
             except:
                 print 'failed to connect to', org, 'repos...'
 
-        os.chdir(curdir)
+        os.chdir(DESTINATION)
