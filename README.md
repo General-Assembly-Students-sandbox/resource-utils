@@ -7,9 +7,9 @@ Document| Description
 --- | ---
 dirs2repos | Script for creating multiple repos out of files in a single folder
 git-org-clone | Automatically downloads all available repositories from within an organization
-Item | Plotting Tool
-Item | Plotting Tool
-Item | Plotting Tool
+Plotting | Visualization Tool
+Split Test | Code
+Student Caller | Q & A Generator
 
 ---
 
